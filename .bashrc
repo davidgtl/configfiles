@@ -1,0 +1,16 @@
+export TAICHI_NUM_THREADS=8
+export TAICHI_REPO_DIR=/Users/davidghitulescu/workspaces/taichi/taichi
+export PYTHONPATH=$TAICHI_REPO_DIR/python/:$PYTHONPATH
+export PATH=$TAICHI_REPO_DIR/bin/:$PATH
+export TAICHI_NUM_THREADS=8
+export TAICHI_REPO_DIR=/Users/davidghitulescu/workspaces/taichi/taichi
+export PYTHONPATH=$TAICHI_REPO_DIR/python/:$PYTHONPATH
+export PATH=$TAICHI_REPO_DIR/bin/:$PATH
+export TAICHI_NUM_THREADS=8
+export TAICHI_REPO_DIR=/Users/davidghitulescu/workspaces/taichi/taichi
+export PYTHONPATH=$TAICHI_REPO_DIR/python/:$PYTHONPATH
+export PATH=$TAICHI_REPO_DIR/bin/:$PATH
+export TAICHI_NUM_THREADS=8
+export TAICHI_REPO_DIR=/Users/davidghitulescu/workspaces/taichi/taichi
+export PYTHONPATH=$TAICHI_REPO_DIR/python/:$PYTHONPATH
+export PATH=$TAICHI_REPO_DIR/bin/:$PATH
