@@ -35,3 +35,4 @@ gsettings set org.gnome.desktop.wm.preferences button-layout 'close,maximize,min
 
 sudo apt-get build-dep xserver-xorg-input-mtrack
 https://howchoo.com/g/mdy0ngziogm/the-perfect-almost-touchpad-settings-on-linux-2
+https://bill.harding.blog/2017/12/27/toward-a-linux-touchpad-as-smooth-as-macbook-pro/
