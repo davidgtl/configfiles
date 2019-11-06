@@ -106,7 +106,7 @@ precmd () {
 
     if [ $ZSH_TIMER ]; then
        
-       ZSH_TIMER=$(($(python -c 'from time import time; print int(round(time() * 1000))') - $ZSH_TIMER))
+       ZSH_TIMER=$(($(python -c 'from time import time; print(int(round(time() * 1000)))') - $ZSH_TIMER))
        export RPROMPT="%F{cyan}$(echo $ZSH_TIMER)ms %B%F{039}%!%f%{$reset_color%}"
        unset $ZSH_TIMER
     fi
