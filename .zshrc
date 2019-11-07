@@ -113,4 +113,5 @@ source $ZSH/oh-my-zsh.sh
 
 #Add color support for tmux
 export TERM=xterm-256color
-
+export GOROOT=/usr/local/go
+export PATH=$GOROOT/bin:$PATH
