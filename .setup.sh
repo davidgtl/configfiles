@@ -38,3 +38,5 @@ https://howchoo.com/g/mdy0ngziogm/the-perfect-almost-touchpad-settings-on-linux-
 https://bill.harding.blog/2017/12/27/toward-a-linux-touchpad-as-smooth-as-macbook-pro/
  echo deep > /sys/power/mem_sleep
 https://askubuntu.com/questions/12383/how-to-go-automatically-from-suspend-into-hibernate
+e4rat
+https://itsfoss.com/upgrade-linux-kernel-ubuntu/
