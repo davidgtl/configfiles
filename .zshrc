@@ -115,3 +115,4 @@ source $ZSH/oh-my-zsh.sh
 export TERM=xterm-256color
 export GOROOT=/usr/local/go
 export PATH=$GOROOT/bin:$PATH
+alias open=xdg-open

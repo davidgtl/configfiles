@@ -40,3 +40,4 @@ https://bill.harding.blog/2017/12/27/toward-a-linux-touchpad-as-smooth-as-macboo
 https://askubuntu.com/questions/12383/how-to-go-automatically-from-suspend-into-hibernate
 e4rat
 https://itsfoss.com/upgrade-linux-kernel-ubuntu/
+sudo systemctl disable NetworkManager-wait-online.service 
