@@ -43,3 +43,4 @@ https://itsfoss.com/upgrade-linux-kernel-ubuntu/
 sudo systemctl disable NetworkManager-wait-online.service 
 dconf /org/gnome/gnome-session/auto-save-session
 https://askubuntu.com/questions/927854/how-do-i-increase-the-size-of-swapfile-without-removing-it-in-the-terminal
+/usr/share/gnome-shell/theme/ubuntu.css
