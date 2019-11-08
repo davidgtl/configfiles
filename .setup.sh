@@ -41,3 +41,4 @@ https://askubuntu.com/questions/12383/how-to-go-automatically-from-suspend-into-
 e4rat
 https://itsfoss.com/upgrade-linux-kernel-ubuntu/
 sudo systemctl disable NetworkManager-wait-online.service 
+dconf /org/gnome/gnome-session/auto-save-session
