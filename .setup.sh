@@ -44,3 +44,18 @@ sudo systemctl disable NetworkManager-wait-online.service
 dconf /org/gnome/gnome-session/auto-save-session
 https://askubuntu.com/questions/927854/how-do-i-increase-the-size-of-swapfile-without-removing-it-in-the-terminal
 /usr/share/gnome-shell/theme/ubuntu.css
+https://int3ractive.com/2018/09/make-the-best-of-MacBook-touchpad-on-Ubuntu.html
+sudo apt install pulseaudio pulseaudio-utils pavucontrol pulseaudio-module-bluetooth
+pacmd list-cards
+pacmd set-card-profile 2 off
+bluetoothctl
+disconnect 50:C9:71:97:A1:86
+connect 50:C9:71:97:A1:86
+pacmd set-card-profile 2 a2dp_sink
+sudo apt-get --purge --reinstall install bluetooth bluez blueman pulseaudio pulseaudio-module-bluetooth
+/var/lib/gdm/.config/pulse/client.conf
+autospawn = no
+daemon-binary = /bin/true
+sudo -ugdm mkdir -p /var/lib/gdm3/.config/systemd/user
+sudo -ugdm ln -s /dev/null /var/lib/gdm3/.config/systemd/user/pulseaudio.socket
+pacmd set-card-profile bluez_card.CC_98_8B_1C_17_9D a2dp_sink

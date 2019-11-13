@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+
+import time
+import dbus
+from dbus.mainloop.glib import DBusGMainLoop
+
+import subprocess
+
+# ID of the device we care about
+DEV_ID = 'CC_98_8B_1C_17_9D'
+
+dbus_loop = DBusGMainLoop()
+bus = dbus.SystemBus(mainloop=dbus_loop)
+
+# Figure out the path to the headset
+man = bus.get_object('org.bluez', '/')
+iface = dbus.Interface(man, 'org.freedesktop.DBus.Properties')
+#adapterPath = iface.DefaultAdapter()
+
+headset = bus.get_object('org.bluez', '/org/bluez/hci0/dev_CC_98_8B_1C_17_9D')
+
+def cb(iface, mbr, path):
+
+    #if ("org.bluez.Headset" == iface and path.find(DEV_ID) > -1):
+    print('iface: %s', iface)
+    print('mbr: %s', mbr)
+    print('path: %s', path)
+
+    print(f"Connected: {mbr['Connected'] == 1}")
+    "pactl set-card-profile "bluez_card.CC_98_8B_1C_17_9D" "off"
+    pactl set-card-profile "bluez_card.CC_98_8B_1C_17_9D" "a2dp_sink"
+headset.connect_to_signal("PropertiesChanged", cb)
+#headset.connect_to_signal("Disconnected", cb, interface_keyword='iface', member_keyword='mbr', path_keyword='path')
+
+from gi.repository import GLib
+loop = GLib.MainLoop()
+loop.run()
+#loop = gobject.MainLoop()
+#loop.run()
