@@ -1,0 +1,11 @@
+[Unit]
+Description=Bluez XM3 monitor for A2DP sink 
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/usr/local/bin/btsink
+
+[Install]
+WantedBy=multi-user.target
