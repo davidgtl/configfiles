@@ -114,6 +114,6 @@ precmd () {
 }
 
 preexec(){
-    ZSH_TIMER=$(python -c 'from time import time; print int(round(time() * 1000))')
+    ZSH_TIMER=$(python -c 'from time import time; print(int(round(time() * 1000)))')
 }
 
