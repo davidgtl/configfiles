@@ -16,7 +16,7 @@ cp configfiles/.zshrc ./
 cp -r configfiles/.oh-my-zsh ./.oh-my-zsh
 #sudo chsh --shell $(which zsh) $(whoami)
 mkdir .oh-my-zsh/custom/plugins/deer 
-wget -o .oh-my-zsh/custom/plugins/deer/deer https://raw.githubusercontent.com/Vifon/deer/master/deer 
+wget -O .oh-my-zsh/custom/plugins/deer/deer https://raw.githubusercontent.com/Vifon/deer/master/deer 
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -28,7 +28,7 @@ cp configfiles/.vimrc ./
 vim +PluginInstall +qall
 
 #gnome
-sudo apt install -y gnome-tweaks gnome-session
+sudo apt install -y gnome-tweaks gnome-session gnome-shell-extensions chrome-gnome-shell
 gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize:'
 /usr/share/gnome-shell/theme/ubuntu.css
 
