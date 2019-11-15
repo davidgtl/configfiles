@@ -57,18 +57,5 @@ sudo systemctl enable btsink.service
 sudo systemctl start btsink.service
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 rm /usr/share/gnome-shell/theme/ubuntu.css
 cp .config/macbuntu/ubuntu.css /usr/share/gnome-shell/theme/
