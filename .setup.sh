@@ -6,7 +6,7 @@ sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
 sudo ubuntu-drivers autoinstall
 
-sudo apt install -y git neovim zsh dconf-editor
+sudo apt install -y git neovim zsh dconf-editor tlp default-jdk
 
 #zsh goodies
 cd $HOME

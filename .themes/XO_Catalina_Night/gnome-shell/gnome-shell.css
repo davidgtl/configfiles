@@ -2658,8 +2658,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .show-apps .overview-icon {
-  background-image: url("assets/launchpad.png") !important;
-  background-size: contain;
+  /*background-image: url("assets/launchpad.png") !important;
+  background-size: contain;*/
   /* You are Using System default ? need 6px padding for fixed icon pozition */
   padding: auto 6px;
 }
