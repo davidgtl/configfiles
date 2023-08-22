@@ -78,10 +78,6 @@ plugins=(
     zsh-autosuggestions
 )
 
-source $ZSH/custom/plugins/deer/deer
-zle -N deer
-bindkey '\ek' deer
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
